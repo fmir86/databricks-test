@@ -21,6 +21,7 @@
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-styled-components": "^6.8.0",
     "gsap": "^3.11.5",
+    "npm": "^9.6.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
