@@ -1,49 +1,42 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby Minimal Starter
-</h1>
+# databricks-test
 
-## 🚀 Quick start
+A single contact page built with Gatsby 5, Tailwind CSS 3 and styled-components. The form uses GSAP for the submit transition and rejects Gmail addresses with native constraint validation.
 
-1.  **Create a Gatsby site.**
+The page lives at `/contact/`. There is no index page, so `/` shows the Gatsby 404 page.
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+## Requirements
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+- Node.js 18 or 20 (tested on Node 20.20). `.nvmrc` pins Node 20.
+- npm 9 or later
 
-2.  **Start developing.**
+## Install
 
-    Navigate into your new site’s directory and start it up.
+```shell
+npm ci
+```
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+## Run
 
-3.  **Open the code and start customizing!**
+Development server with hot reload:
 
-    Your site is now running at http://localhost:8000!
+```shell
+npm run develop
+```
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+Then open http://localhost:8000/contact/
 
-4.  **Learn more**
+Production build and local preview:
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
+```shell
+npm run build
+npm run serve
+```
 
-## 🚀 Quick start (Netlify)
+Then open http://localhost:9000/contact/
 
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
+## Project structure
 
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+- `src/pages/contact.js`: the contact page
+- `src/components/Form/`: form component and its styled-components styles
+- `src/styles/global.css`: Tailwind entry point
+- `tailwind.config.js`: custom colors and max width
